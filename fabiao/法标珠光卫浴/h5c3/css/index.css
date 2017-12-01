@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes shark {
+    0%{
+        margin: 0;
+    }
+    10%{
+        margin: -30px 0 0 -30px
+    }
+    30%{
+        margin:0 -30px -30px 0;
+    }
+    40%{
+        margin: 0 0 -30px -30px;
+    }
+    50%{
+        margin: 0 -30px -30px 0;
+    }
+    60%{
+        margin: -10px 0 0 -10px;
+    }
+    70%{
+        margin: -10px -10px 0 0;
+    }
+   80%{
+         margin: 0 -10px -10px 0;
+     }
+    90%{
+        margin: 0 0 -10px -10px;
+    }
+}
+html{
+    /*animation: shark 10s ;*/
+    overflow-x: hidden;
+}
+#banner{
+    background: url("../images/bg1.jpg") no-repeat center;
+    height: 500px;
+    background-color: #000;
+}
+#banner .center{
+    padding: 100px 0;
+}
+#banner .title{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+#banner .title p{
+    margin-bottom: 20px;
+}
+#banner .text{
+    margin: auto;
+    position: relative;
+    height: 72px;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+#banner .text div{
+    width: 200px;
+    height: 72px;
+    background-image: url("../images/text_left.png");
+    position: absolute;
+}
+#banner .text div:nth-of-type(2){
+    background-image: url("../images/text_right.png");
+    right: 0;
+}
+#banner .btn{
+    text-align: center;
+}
+#banner .btn a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #08b573;
+    width: 100px;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 15px;
+}
+#banner .btn a:nth-of-type(2){
+    animation: color 5s infinite;
+}
+@keyframes color {
+    0%{
+        background-color: #84050e;
+    }
+    50%{
+        background-color: #08b573;
+    }
+    100%{
+        background-color: #b60202;
+    }
+}
+
+
+
+.comsic-cube{
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;;
+}
+.comsic-cube .comsic{
+    background-image: url(../images/circle.jpg);
+    height: 548px;
+    width: 700px;
+    position: absolute;
+}
+.comsic-cube .cube{
+    position: relative;
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    transform-style: preserve-3d;/*������Ԫ��3D����*/
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    animation: cube 10s infinite linear;
+}
+.comsic-cube .con0{
+    position: absolute;
+    left: 700px;
+    margin-top: -50px;
+    z-index: 9;
+}
+.comsic-cube .con0 h2{
+    color: white;
+    text-align: center;
+    margin-top: -350px;
+    margin-left: 10px;
+    position: absolute;
+}
+.comsic-cube .con0 .line{
+    background-color: #fff;
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    margin-top: -310px;
+    margin-left: -20px;
+}
+.comsic-cube .con0 p{
+    color: #cccccc;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+
+.comsic-cube .text {
+    color: #fff;
+    margin:auto;
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+.comsic-cube .text div{
+    position: absolute;
+    background:url("../images/left.png") no-repeat left 10px,url("../images/right.png") no-repeat right top;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 12px;
+    text-align:center;
+    padding:10px;
+    border-radius: 2px;
+}
+.comsic-cube .text div p{
+    margin-bottom: 5px;
+}
+.comsic-cube .text div strong{
+    margin-top:20px;
+    display: block;
+    font-size: 14px;
+    font-weight:300;
+}
+.comsic-cube .text div:nth-of-type(1){
+    top:30px;
+    left:50%;
+    margin-left: -64px;
+    margin-top: 60px;
+    background:url("../images/left.png") no-repeat left bottom,url("../images/right.png") no-repeat right 80px;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 9;
+    position: absolute;
+}
+
+
+
+.comsic-cube .text div:nth-of-type(2){
+    top:30px;
+    left:50%;
+    margin-left: 130px;
+    margin-top: 253px;
+    background-color: rgba(255, 255, 255, 0.15);
+    z-index: 9;
+    position: absolute;
+}
+.comsic-cube .text div:nth-of-type(2) strong{
+    margin-top: 0;
+    margin-bottom: 20px;
+    /*background:url("../images/left.png") no-repeat left bottom,url("../images/right.png") no-repeat right 80px;*/
+}
+
+.comsic-cube .text div:nth-of-type(3){
+    right: 190px;
+    bottom: 230px;
+    z-index: 9;
+    position: absolute;
+}
+.comsic-cube .text div:nth-of-type(3) strong{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.comsic-cube .text div:nth-of-type(4){
+    right: 360px;
+    bottom:140px;
+    z-index: 9;
+    position: absolute;
+}
+.comsic-cube .text div:nth-of-type(4) strong{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.comsic-cube .text div:nth-of-type(5){
+    left: 170px;
+    top: 460px;
+    z-index: 9;
+    position: absolute;
+}
+.comsic-cube .text div:nth-of-type(5) strong{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.comsic-cube .text div:nth-of-type(6){
+    left: 170px;
+    top:  310px;
+    z-index: 9;
+    position: absolute;
+}
+.comsic-cube .text div:nth-of-type(6) strong{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+
+.comsic-cube .cube div{
+    width: 80px;
+    height: 80px;
+    border: 3px solid #19decd;
+    box-shadow: 0 0 80px #19decd;
+    color: #ccc;
+    text-align: center;
+    line-height: 80px;
+    font-size: 42px;
+    text-shadow: 0 0 20px #fff;
+    position: absolute;
+}
+.comsic-cube .cube div:nth-of-type(1){
+    transform: translateY(-40px) rotateX(90deg);
+}
+.comsic-cube .cube div:nth-of-type(2){
+    transform: translateY(40px) rotateX(90deg);
+}
+.comsic-cube .cube div:nth-of-type(3){
+    transform: translateX(-40px) rotateY(90deg);
+}
+.comsic-cube .cube div:nth-of-type(4){
+    transform: translateX(40px) rotateY(90deg);
+}
+.comsic-cube .cube div:nth-of-type(5){
+    transform: translateZ(-40px);
+}
+.comsic-cube .cube div:nth-of-type(6){
+    transform: translateZ(40px);
+}
+@keyframes cube {
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+
+
+body{
+    background-color: #000;
+}
+html{
+    overflow-x: hidden;
+}
+.wrap{
+    overflow: hidden;
+    height: 1000px;
+    margin-bottom: 200px;
+}
+.wrap ul{
+    transform-style: preserve-3d;
+    transform: translateX(-10%) translateY(-180px) rotateX(45deg) rotateZ(45deg);
+    list-style: none;
+    width: 1080px;
+    margin: auto;
+}
+.wrap ul::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.wrap li{
+    float: left;
+    margin: 15px;
+    position: relative;
+    width: 330px;
+    height: 230px;
+    background-color: rgba(255,255,255,0.5);
+    transition: .5s;
+}
+.wrap li:hover{
+    box-shadow: 0 0 50px #fff;
+}
+.wrap li img{
+    width: 330px;
+    height: 230px;
+    position: absolute;
+    z-index: 4;
+    transition: .5s;
+}
+.wrap li div{
+    width: 330px;
+    height: 230px;
+    position: absolute;
+    transition: .5s;
+}
+.wrap li div:nth-of-type(1){
+    background-color: rgba(172, 92, 245, 0.5);
+}
+.wrap li div:nth-of-type(2){
+    background-color: rgba(91, 212, 230, 0.5);
+}
+.wrap li div:nth-of-type(3){
+    background-color: rgba(93, 235, 180, 0.5);
+}
+.wrap li:hover img{
+    z-index: 10;
+    transform: translateZ(100px);
+}
+.wrap li:hover div:nth-of-type(1){
+    transform: translateZ(75px);
+    z-index: 9;
+}
+.wrap li:hover div:nth-of-type(2){
+    transform: translateZ(50px);
+    z-index: 8;
+}
+.wrap li:hover div:nth-of-type(3){
+    transform: translateZ(25px);
+    z-index: 7;
+}
+header h2{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+header .line{
+    background-color: white;
+    width: 100px;
+    height: 3px;
+    margin: auto;
+    margin-top: 10px;
+}
+header p{
+    color: #cccccc;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.xuanzhuang{
+    height: 1000px;
+}
+.xuanzhuang .xuan h2{
+    color: white;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: -1000px;
+}
+.xuanzhuang .xuan h3{
+    color: white;
+    position: absolute;
+    margin-left: 585px;
+    margin-top: -950px;
+}
+.xuanzhuang .xuan1 h2{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -450px;
+}
+.xuanzhuang .xuan1 p{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -520px;
+}
+.xuanzhuang .xuan1 span{
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -480px;
+}
+.xuanzhuang .xuan2 h2{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -650px;
+}
+.xuanzhuang .xuan2 p{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: -650px;
+}
+.xuanzhuang .xuan2 span{
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    margin-left: 750px;
+    margin-top: -600px;
+}
+.xuanzhuang .xuan3 h2{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-left:1000px;
+    margin-top: -500px;
+}
+.xuanzhuang .xuan3 p{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    margin-left: 980px;
+    margin-top: -450px;
+}
+.xuanzhuang .xuan3 span{
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    margin-left: 950px;
+    margin-top: -400px;
+    text-align: right;
+}
+.xuanzhuang .xuan4 h2{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    margin-left:780px;
+    margin-top: -280px;
+}
+.xuanzhuang .xuan4 p{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    margin-left:690px;
+    margin-top: -300px;
+}
+.xuanzhuang .xuan4 span{
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    margin-left:700px;
+    margin-top: -250px;
+    text-align: right;
+}
+.xuanzhuang .xuan5{
+    width: 100px;
+    height: 40px;
+    background-color: #02a9ad;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    margin-left: 700px;
+}
+.zhuang{
+    position: relative;
+    margin-top: 400px;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    height: 800px;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    background-image: url("../images/blackhole.png");
+    animation: zhuang 10s infinite linear;
+}
+@keyframes zhuang {
+    100%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .xuanzhuang .xuan h2{
+        margin-left: 400px;
+    }
+    .xuanzhuang .xuan1,
+    .xuanzhuang .xuan2,
+    .xuanzhuang .xuan3,
+    .xuanzhuang .xuan4{
+        margin-left: -300px;
+    }
+    .comsic-cube .con0{
+        left: 470px;
+    }
+    .comsic-cube .text div:nth-of-type(1) {
+        top: -20px;
+    }
+    .comsic-cube .text div:nth-of-type(2) {
+        top: -21px;
+    }
+    .comsic-cube .text div:nth-of-type(3) {
+        bottom: 280px;
+    }
+    .comsic-cube .text div:nth-of-type(4) {
+        bottom: 190px;
+    }
+    .comsic-cube .text div:nth-of-type(5) {
+        top: 260px;
+    }
+    .comsic-cube .text div:nth-of-type(6) {
+        top: 410px;
+    }
+    .xuanzhuang .xuan h2{
+        margin-left: 400px;
+    }
+    .xuanzhuang .xuan h3{
+        margin-left: 220px;
+    }
+    .xuanzhuang .xuan5 {
+        margin-left: 440px;
+    }
+
+}
