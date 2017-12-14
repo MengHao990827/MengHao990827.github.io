@@ -1,0 +1,431 @@
+  html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.first{
+    position: relative;
+}
+.swiper-button-next{
+    position: absolute;
+    top: auto;
+    bottom:7%;
+    left: 50%;
+    margin-left: -30px;
+    animation:m 2s linear infinite;
+    background-image: url("../img/up.png");
+}
+.swiper-slide{
+    background-color: #1a1f25;
+}
+
+.background_one{
+     position: absolute;
+    left: 0;
+    top: 0;
+    width: 95%;
+}
+.background_one img{
+    width: 100%;
+    z-index: 1;
+}
+.background_two{
+     position: absolute;
+    right: 0;
+    top: 0;
+    width: 47%;
+}
+.background_two img{
+     width: 100%;
+}
+.background_three{
+    position: absolute;
+    left: 0;
+    top: 18%; 
+    height: 69%;
+
+}
+.background_three img{
+    height: 100%;
+}
+.background_four{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 78%;
+    
+
+}
+.background_four img{
+    height: 100%;z-index: 1;
+}
+.background_five{
+     position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 48%;
+    height: 22%;
+}
+.background_five img{
+    width: 100%;
+    height: 100%;
+}
+.background_six{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+}
+.background_six img{
+    width: 100%;
+
+}
+.off{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    animation:mus 2s linear infinite;
+    z-index: 2;
+}
+.content{
+    color: #fff;
+    font-size: 40px;
+    width: 56%;
+    position: absolute;
+    top: 25%;
+    left: 22%;
+}
+.div1 .span1{
+   
+    float: left;
+}
+@keyframes mus{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+@keyframes m{
+    0%{
+        bottom:7%;
+        opacity: 1;
+    }
+    50%{
+       bottom: 8%;
+        opacity: 0.5;
+    }
+    100%{
+        bottom: 9%;
+        opacity: 0.1;
+    }
+}
+.div4{
+    width: 120px;
+    height: 36px;
+    float: left;
+    background-color: #00caf5;
+    margin-left: 47%;
+    z-index: -1;
+    margin-top: -45px;
+}
+.div2 img{
+    width: 100%;
+}
+.span2{
+    padding: 5px 20px;
+    font-size: 20px;
+    margin-left: 9%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.sx{
+    font-size: 25px;
+    clear: both;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: #01d4f5;
+}
+.img1{
+    margin-top: -30px;
+}
+
+.div2 .p2{
+    color: #00c9f4;
+    
+   
+    font-size: 35px;
+}
+
+.div2 .p1{
+    margin-top: -30%;
+     margin-left: 5px;
+}
+.div2 .p3,.p4{
+    font-size: 22px;
+}
+.p4{
+    margin-top: -6%;
+}
+
+
+
+
+/*第二屏*/
+.two_div1 h2{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-left: -54px;
+  color: #00dbfe;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00dbfe;
+}
+.two_div1 img{
+    width: 45%;
+    margin-left: 5%;
+    height: 35%;
+    
+}
+.two_div1 {
+    position: absolute;
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+    height: 60%;
+}
+.span_1,.span_2{
+    clear: both;
+    float: left;
+    width: 50%;
+}
+.diyi{
+    margin-top: 25%;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+.two_div2 h2{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-left: -54px;
+  color: #00dbfe;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00dbfe;
+}
+
+.two_div2 {
+    position: absolute;
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+    height: 60%;
+    
+}
+
+.dier{
+    margin-top: 25%;
+    margin-bottom: 10%;
+}
+width: 70%;
+}
+.two_div2 img{
+    width: 40%;
+    float: left;
+    clear: both;
+}
+.two_div2 .s_span2{
+  
+   float: left;
+   
+    
+}
+.s_2{
+    width: 80%;
+}
+.s_2 img{
+    width: 50%;
+    margin-right: 8%;
+    float: left;
+    margin-left: 5% ;   
+}
+.s_3{
+    width: 80%;
+}
+.s_3 img{
+    width: 50%;
+     margin-right: 8%;
+    float: left;
+    margin-left: 5% ;
+}
+
+.s_4{
+    width: 80%;
+}
+.s_4 img{
+    width: 50%;
+     margin-right: 8%;
+    float: left;
+    margin-left: 5% ;
+}
+
+.s_span1{
+    float: left;
+    margin-left: 10%;
+    margin-top: 13%;
+}
+
+.two_div3{
+      position: absolute;
+    width: 70%;
+    color: #fff;
+    font-size: 16px;
+    height: 60%;
+}
+.two_div3 h2{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-left: -54px;
+  color: #00dbfe;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00dbfe;
+}
+
+
+.four_div1{
+    width: 100%;
+    height: 10%;
+    margin-left: 10%; 
+    margin-top:50%;
+}
+.four_div1 img{
+    float: left;
+    margin-right: 5%;
+}
+.four_div1 span{
+    float: left;
+} 
+
+.four_div2{
+    width: 100%;
+     height: 10%;
+    margin-left: 10%;
+    clear: both;
+}
+.four_div2 img{
+    float: left;
+    margin-right: 5%;
+}
+.four_div2 span{
+    float: left;
+} 
+.four_div3{
+    width: 100%;
+    height: 10%;
+    margin-left: 10%;
+    clear: both;
+}
+.four_div3 img{
+    float: left;
+    margin-right: 5%;
+}
+.four_div3 span{
+    float: left;
+} 
+
+.four_div4{
+    width: 100%;
+    height: 10%;
+    margin-left: 10%;
+    clear: both;  
+}
+.four_div4 img{
+    float: left;
+    margin-right: 5%;
+}
+.four_div4 span{
+    float: left;
+} 
+
+.four_div5{
+    width: 100%;
+    height: 10%;
+ 
+    margin-left: 10%;
+    clear: both;
+
+}
+.four_div5 img{
+    float: left;
+    margin-right: 5%;
+}
+.four_div5 span{
+    float: left;
+} 
+.four_div6{
+    width: 100%;
+    height: 10%;
+    margin-left: 10%;
+    clear: both;  
+}
+.four_div6 img{
+    float: left;
+    margin-right: 5%;
+}
+.four_div6 span{
+    float: left;
+}
+
+
+.js{
+    width: 70%;
+    height: 60%;
+    margin-top: 15%;
+    position: absolute;
+    z-index: 999;
+}
+input{
+    width: 60%;
+    border-radius: 20px;
+    height: 8%;
+    font-size: 16px;
+    border: 1px solid #00dbfe;
+    outline:none;
+}
